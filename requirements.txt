@@ -1,0 +1,8 @@
+numpy
+requests
+ultralytics
+opencv-python
+Pillow
+scipy
+fastdtw
+lapx>=0.5.5
