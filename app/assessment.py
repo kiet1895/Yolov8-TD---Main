@@ -304,9 +304,15 @@ def calculate_standard_params_per_phase(standard_data, frame_mapping):
     print("-> Tính toán thông số chuẩn hoàn tất.")
     return all_phase_params
 
-def calculate_phase_score(std_params, student_params, weights):
+def calculate_phase_score(std_params, student_params, weights, difficulty_threshold=25.0):
     """
     Tính điểm cho một nhịp dựa trên sự khác biệt giữa thông số chuẩn và của học sinh.
+    Sử dụng threshold-based scoring:
+    - Error <= threshold: 100% score
+    - Error between threshold and 2×threshold: Linear decay from 100% to 0%
+    - Error > 2×threshold: 0% score
+    
+    :param difficulty_threshold: Ngưỡng sai số cho phép (từ scoring_difficulty trong config)
     """
     total_score = 0
     total_weight = 0
@@ -327,11 +333,28 @@ def calculate_phase_score(std_params, student_params, weights):
             if param_key and param_key in std_params and param_key in student_params:
                 std_val = std_params[param_key]
                 student_val = student_params[param_key]
-                
-                max_diff = 180.0 if 'ANGLE' in param_key else 2.0
                 diff = abs(std_val - student_val)
                 
-                score = max(0, 1 - (diff / max_diff))
+                # Apply threshold-based scoring
+                if 'ANGLE' in param_key:
+                    # For angles, use threshold directly (in degrees)
+                    if diff <= difficulty_threshold:
+                        score = 1.0
+                    elif diff <= difficulty_threshold * 2:
+                        # Linear decay from 1.0 to 0.0 between threshold and 2×threshold
+                        score = 1.0 - ((diff - difficulty_threshold) / difficulty_threshold)
+                    else:
+                        score = 0.0
+                else:
+                    # For distances, scale threshold to normalized distance range [0, 2]
+                    # Scale: threshold degrees -> proportional distance units
+                    distance_threshold = difficulty_threshold / 180.0 * 2.0
+                    if diff <= distance_threshold:
+                        score = 1.0
+                    elif diff <= distance_threshold * 2:
+                        score = 1.0 - ((diff - distance_threshold) / distance_threshold)
+                    else:
+                        score = 0.0
                 
                 total_score += score * weight
                 total_weight += weight
@@ -340,10 +363,10 @@ def calculate_phase_score(std_params, student_params, weights):
         return 1.0
         
     phase_score = total_score / total_weight
-    print(f"Điểm số cho nhịp: {phase_score:.2f}")
+    print(f"Điểm số cho nhịp: {phase_score:.2f} (threshold: {difficulty_threshold}°)")
     return phase_score
 
-def run_assessment_single_view(student_video_path, std_data, std_params_per_phase, standard_frame_mapping, phase_weights, progress_callback=None):
+def run_assessment_single_view(student_video_path, std_data, std_params_per_phase, standard_frame_mapping, phase_weights, difficulty_threshold=25.0, progress_callback=None):
     """
     Chạy đánh giá cho một video của học sinh.
     Cải tiến: Sử dụng DTW để có frame_mapping động.
@@ -402,13 +425,13 @@ def run_assessment_single_view(student_video_path, std_data, std_params_per_phas
         student_params = student_params_per_phase[phase]
         weights = phase_weights.get(phase, {})
 
-        phase_score = calculate_phase_score(std_params, student_params, weights)
+        phase_score = calculate_phase_score(std_params, student_params, weights, difficulty_threshold)
         final_scores[phase] = phase_score
 
     print("Điểm số cuối cùng:", final_scores)
     return final_scores, output_video_path
 
-def calculate_scores_from_data(student_data, std_data, std_params_per_phase, standard_frame_mapping, phase_weights):
+def calculate_scores_from_data(student_data, std_data, std_params_per_phase, standard_frame_mapping, phase_weights, difficulty_threshold=25.0):
     """
     Tính toán điểm số từ dữ liệu keypoints đã được trích xuất trước.
     Đây là hàm tối ưu hóa để tránh xử lý lại video.
@@ -438,7 +461,7 @@ def calculate_scores_from_data(student_data, std_data, std_params_per_phase, sta
         student_params = student_params_per_phase[phase]
         weights = phase_weights.get(phase, {})
 
-        phase_score = calculate_phase_score(std_params, student_params, weights)
+        phase_score = calculate_phase_score(std_params, student_params, weights, difficulty_threshold)
         final_scores[phase] = phase_score
 
     print("Điểm số cuối cùng:", final_scores)

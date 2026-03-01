@@ -218,12 +218,17 @@ class App(tk.Tk):
         progress_win = ProgressWindow(self, "Đang phân tích và tính điểm")
         self.result_queue = queue.Queue()
 
+        # Lấy độ khó từ config
+        difficulty_level = self.app_config.get('current_difficulty', 'medium')
+        difficulty_threshold = self.app_config.get('scoring_difficulty', {}).get(difficulty_level, 10.0)
+        
         # Tạo và bắt đầu luồng xử lý
         thread = threading.Thread(
             target=self.run_assessment_thread,
             args=(
                 student_video_path, std_data, std_params_per_phase,
                 exercise['frame_mapping'], exercise['phase_weights'],
+                difficulty_threshold,
                 lambda p, s: self.after(0, progress_win.update_progress, p, s)
             )
         )
@@ -302,7 +307,7 @@ class App(tk.Tk):
 
         threading.Thread(target=_check_thread, daemon=True).start()
 
-    def run_assessment_thread(self, student_video_path, std_data, std_params, frame_mapping, weights, progress_callback):
+    def run_assessment_thread(self, student_video_path, std_data, std_params, frame_mapping, weights, difficulty_threshold, progress_callback):
         """Hàm này chạy trong một luồng riêng để không làm treo giao diện."""
         try:
             # Gọi hàm xử lý chính và truyền callback vào
@@ -313,6 +318,7 @@ class App(tk.Tk):
                 std_params,
                 frame_mapping,
                 weights,
+                difficulty_threshold=difficulty_threshold,
                 progress_callback=progress_callback
             )
             self.result_queue.put(result)

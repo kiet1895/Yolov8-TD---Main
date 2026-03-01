@@ -52,37 +52,6 @@ Nếu bạn muốn chia sẻ ứng dụng cho người khác:
    - Toàn bộ thư mục khá lớn (~1-2GB) do chứa PyTorch và YOLOv8
    - Đây là điều bình thường cho ứng dụng AI/Deep Learning
 
-### 🔧 Nếu gặp lỗi
-
-**Lỗi "Missing DLL":**
-```bash
-# Build lại với verbose để debug
-pyinstaller --clean --debug all build.spec
-```
-
-**Lỗi khi chạy:**
-- Kiểm tra file `config.json` có tồn tại không
-- Kiểm tra thư mục `models` và `assets` có đầy đủ không
-- Chạy từ Command Prompt để xem lỗi chi tiết:
-  ```cmd
-  cd "D:\Yolov8 TD - Main\dist\YoloV8_TD"
-  YoloV8_TD.exe
-  ```
-
-### 📝 Build lại
-
-Nếu cần build lại (sau khi sửa code):
-```cmd
-# Chạy lại file batch
-build_exe.bat
-```
-
-Hoặc:
-```cmd
-# Build thủ công
-pyinstaller --clean build.spec
-```
-
 ---
 
 **Tác giả:** Build bởi Vo Kiet NGT

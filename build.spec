@@ -140,6 +140,9 @@ exe = EXE(
     icon=None,  # Add icon path here if you have one
 )
 
+# Add config.json to output directory (not just _internal)
+a.datas += [('config.json', 'config.json', 'DATA')]
+
 coll = COLLECT(
     exe,
     a.binaries,
