@@ -11,472 +11,1020 @@
     },
     "exercises": [
         {
-            "name": "Bài tập vươn thở (Mẫu)",
-            "standard_video": "assets/video-mau-chuan.mp4",
-            "cache_file": "assets/cache_vuon_tho.json",
+            "name": "Động tác vươn thở",
+            "standard_video": "../../assets/Động tác Vươn thở.mp4",
+            "cache_file": "assets/cache_động_tác_vươn_thở.json",
             "frame_mapping": {
                 "Nhịp 1": [
-                    30,
-                    60
+                    0,
+                    113
                 ],
                 "Nhịp 2": [
-                    60,
-                    90
+                    113,
+                    166
                 ],
                 "Nhịp 3": [
-                    90,
-                    120
+                    166,
+                    183
                 ],
                 "Nhịp 4": [
-                    120,
-                    180
+                    183,
+                    215
                 ],
                 "Nhịp 5": [
-                    180,
-                    210
+                    215,
+                    364
                 ],
                 "Nhịp 6": [
-                    210,
-                    270
+                    364,
+                    383
                 ],
                 "Nhịp 7": [
-                    270,
+                    383,
+                    408
+                ],
+                "Nhịp 8": [
+                    408,
+                    484
+                ]
+            },
+            "phase_weights": {
+                "Nhịp 1": {
+                    "L_SHOULDER_ANGLE": 0.0,
+                    "R_SHOULDER_ANGLE": 0.02,
+                    "L_ELBOW_ANGLE": 0.43,
+                    "R_ELBOW_ANGLE": 0.55,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 2": {
+                    "L_SHOULDER_ANGLE": 0.02,
+                    "R_SHOULDER_ANGLE": 0.0,
+                    "L_ELBOW_ANGLE": 0.52,
+                    "R_ELBOW_ANGLE": 0.46,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 3": {
+                    "L_SHOULDER_ANGLE": 0.46,
+                    "R_SHOULDER_ANGLE": 0.54,
+                    "L_ELBOW_ANGLE": 0.0,
+                    "R_ELBOW_ANGLE": 0.0,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 4": {
+                    "L_SHOULDER_ANGLE": 0.7,
+                    "R_SHOULDER_ANGLE": 0.26,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.01,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 5": {
+                    "L_SHOULDER_ANGLE": 0.11,
+                    "R_SHOULDER_ANGLE": 0.09,
+                    "L_ELBOW_ANGLE": 0.38,
+                    "R_ELBOW_ANGLE": 0.42,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 6": {
+                    "L_SHOULDER_ANGLE": 0.48,
+                    "R_SHOULDER_ANGLE": 0.52,
+                    "L_ELBOW_ANGLE": 0.0,
+                    "R_ELBOW_ANGLE": 0.0,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 7": {
+                    "L_SHOULDER_ANGLE": 0.66,
+                    "R_SHOULDER_ANGLE": 0.29,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.02,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.01,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 8": {
+                    "L_SHOULDER_ANGLE": 0.56,
+                    "R_SHOULDER_ANGLE": 0.44,
+                    "L_ELBOW_ANGLE": 0.0,
+                    "R_ELBOW_ANGLE": 0.0,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                }
+            }
+        },
+        {
+            "name": "Động tác văn mình",
+            "standard_video": "../../assets/Động tác Vặn mình.mp4",
+            "cache_file": "assets/cache_động_tác_văn_mình.json",
+            "frame_mapping": {
+                "Nhịp 1": [
+                    0,
+                    45
+                ],
+                "Nhịp 2": [
+                    45,
+                    75
+                ],
+                "Nhịp 3": [
+                    75,
+                    142
+                ],
+                "Nhịp 4": [
+                    142,
+                    276
+                ],
+                "Nhịp 5": [
+                    276,
+                    418
+                ],
+                "Nhịp 6": [
+                    418,
+                    484
+                ],
+                "Nhịp 7": [
+                    484,
+                    550
+                ],
+                "Nhịp 8": [
+                    550,
+                    593
+                ]
+            },
+            "phase_weights": {
+                "Nhịp 1": {
+                    "L_SHOULDER_ANGLE": 0.48,
+                    "R_SHOULDER_ANGLE": 0.47,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.03,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 2": {
+                    "L_SHOULDER_ANGLE": 0.13,
+                    "R_SHOULDER_ANGLE": 0.15,
+                    "L_ELBOW_ANGLE": 0.02,
+                    "R_ELBOW_ANGLE": 0.64,
+                    "L_HIP_ANGLE": 0.02,
+                    "R_HIP_ANGLE": 0.02,
+                    "L_KNEE_ANGLE": 0.01,
+                    "R_KNEE_ANGLE": 0.01,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 3": {
+                    "L_SHOULDER_ANGLE": 0.12,
+                    "R_SHOULDER_ANGLE": 0.1,
+                    "L_ELBOW_ANGLE": 0.47,
+                    "R_ELBOW_ANGLE": 0.31,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 4": {
+                    "L_SHOULDER_ANGLE": 0.18,
+                    "R_SHOULDER_ANGLE": 0.16,
+                    "L_ELBOW_ANGLE": 0.29,
+                    "R_ELBOW_ANGLE": 0.37,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 5": {
+                    "L_SHOULDER_ANGLE": 0.17,
+                    "R_SHOULDER_ANGLE": 0.19,
+                    "L_ELBOW_ANGLE": 0.37,
+                    "R_ELBOW_ANGLE": 0.27,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 6": {
+                    "L_SHOULDER_ANGLE": 0.38,
+                    "R_SHOULDER_ANGLE": 0.33,
+                    "L_ELBOW_ANGLE": 0.13,
+                    "R_ELBOW_ANGLE": 0.15,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 7": {
+                    "L_SHOULDER_ANGLE": 0.11,
+                    "R_SHOULDER_ANGLE": 0.11,
+                    "L_ELBOW_ANGLE": 0.33,
+                    "R_ELBOW_ANGLE": 0.45,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 8": {
+                    "L_SHOULDER_ANGLE": 0.01,
+                    "R_SHOULDER_ANGLE": 0.0,
+                    "L_ELBOW_ANGLE": 0.48,
+                    "R_ELBOW_ANGLE": 0.51,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                }
+            }
+        },
+        {
+            "name": "Động tác lườn",
+            "standard_video": "../../assets/Động tác Lườn.mp4",
+            "cache_file": "assets/cache_động_tác_lườn.json",
+            "frame_mapping": {
+                "Nhịp 1": [
+                    0,
+                    58
+                ],
+                "Nhịp 2": [
+                    58,
+                    152
+                ],
+                "Nhịp 3": [
+                    152,
+                    264
+                ],
+                "Nhịp 4": [
+                    264,
                     300
                 ],
-                "Nhịp 8": [
-                    300,
-                    390
-                ]
-            },
-            "phase_weights": {
-                "Nhịp 1": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 2": {
-                    "L_SHOULDER_ANGLE": 0.15,
-                    "R_SHOULDER_ANGLE": 0.15,
-                    "L_ELBOW_ANGLE": 0.1,
-                    "R_ELBOW_ANGLE": 0.1,
-                    "L_HIP_ANGLE": 0.15,
-                    "R_HIP_ANGLE": 0.15,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.1,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 3": {
-                    "L_SHOULDER_ANGLE": 0.1,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.2,
-                    "R_ELBOW_ANGLE": 0.2,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.1,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 4": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 5": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 6": {
-                    "L_SHOULDER_ANGLE": 0.15,
-                    "R_SHOULDER_ANGLE": 0.15,
-                    "L_ELBOW_ANGLE": 0.1,
-                    "R_ELBOW_ANGLE": 0.1,
-                    "L_HIP_ANGLE": 0.15,
-                    "R_HIP_ANGLE": 0.15,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.1,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 7": {
-                    "L_SHOULDER_ANGLE": 0.1,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.2,
-                    "R_ELBOW_ANGLE": 0.2,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.1,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 8": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
-                    "ANKLE_DISTANCE": 0.0
-                }
-            }
-        },
-        {
-            "name": "bai tập test v3",
-            "standard_video": "assets/video-mau-chuan - Copy.mp4",
-            "cache_file": "assets/cache_bai_tập_test_v3.json",
-            "frame_mapping": {
-                "Nhịp 1": [
-                    0,
-                    33
-                ],
-                "Nhịp 2": [
-                    33,
-                    56
-                ],
-                "Nhịp 3": [
-                    56,
-                    97
-                ],
-                "Nhịp 4": [
-                    97,
-                    172
-                ],
                 "Nhịp 5": [
-                    172,
-                    207
+                    300,
+                    453
                 ],
                 "Nhịp 6": [
-                    207,
-                    232
+                    453,
+                    564
                 ],
                 "Nhịp 7": [
-                    232,
-                    305
+                    564,
+                    600
                 ],
                 "Nhịp 8": [
-                    305,
-                    311
+                    600,
+                    643
                 ]
             },
             "phase_weights": {
                 "Nhịp 1": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
+                    "L_SHOULDER_ANGLE": 0.46,
+                    "R_SHOULDER_ANGLE": 0.51,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.0,
+                    "L_HIP_ANGLE": 0.02,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 2": {
-                    "L_SHOULDER_ANGLE": 0.16,
-                    "R_SHOULDER_ANGLE": 0.16,
-                    "L_ELBOW_ANGLE": 0.16,
-                    "R_ELBOW_ANGLE": 0.16,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 3": {
-                    "L_SHOULDER_ANGLE": 0.15,
-                    "R_SHOULDER_ANGLE": 0.15,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.08,
-                    "R_KNEE_ANGLE": 0.08,
-                    "WRIST_DISTANCE": 0.04,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 4": {
-                    "L_SHOULDER_ANGLE": 0.1,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.2,
-                    "R_ELBOW_ANGLE": 0.2,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.06,
-                    "R_KNEE_ANGLE": 0.06,
-                    "WRIST_DISTANCE": 0.08,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 5": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 6": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 7": {
-                    "L_SHOULDER_ANGLE": 0.1,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.2,
-                    "R_ELBOW_ANGLE": 0.2,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.06,
-                    "R_KNEE_ANGLE": 0.06,
-                    "WRIST_DISTANCE": 0.08,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 8": {
-                    "L_SHOULDER_ANGLE": 0.1,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.08,
+                    "L_SHOULDER_ANGLE": 0.01,
+                    "R_SHOULDER_ANGLE": 0.74,
+                    "L_ELBOW_ANGLE": 0.0,
                     "R_ELBOW_ANGLE": 0.08,
                     "L_HIP_ANGLE": 0.15,
-                    "R_HIP_ANGLE": 0.15,
-                    "L_KNEE_ANGLE": 0.15,
-                    "R_KNEE_ANGLE": 0.15,
-                    "WRIST_DISTANCE": 0.04,
+                    "R_HIP_ANGLE": 0.02,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 3": {
+                    "L_SHOULDER_ANGLE": 0.68,
+                    "R_SHOULDER_ANGLE": 0.26,
+                    "L_ELBOW_ANGLE": 0.02,
+                    "R_ELBOW_ANGLE": 0.0,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.03,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 4": {
+                    "L_SHOULDER_ANGLE": 0.91,
+                    "R_SHOULDER_ANGLE": 0.0,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.02,
+                    "R_HIP_ANGLE": 0.04,
+                    "L_KNEE_ANGLE": 0.01,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 5": {
+                    "L_SHOULDER_ANGLE": 0.31,
+                    "R_SHOULDER_ANGLE": 0.62,
+                    "L_ELBOW_ANGLE": 0.0,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.05,
+                    "R_HIP_ANGLE": 0.01,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 6": {
+                    "L_SHOULDER_ANGLE": 0.68,
+                    "R_SHOULDER_ANGLE": 0.25,
+                    "L_ELBOW_ANGLE": 0.03,
+                    "R_ELBOW_ANGLE": 0.0,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.03,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 7": {
+                    "L_SHOULDER_ANGLE": 0.84,
+                    "R_SHOULDER_ANGLE": 0.01,
+                    "L_ELBOW_ANGLE": 0.05,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.03,
+                    "R_HIP_ANGLE": 0.06,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 8": {
+                    "L_SHOULDER_ANGLE": 0.52,
+                    "R_SHOULDER_ANGLE": 0.44,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.01,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 }
             }
         },
         {
-            "name": "bài tập test v4",
-            "standard_video": "assets/Bài thể dục lớp 5 với hoa.mp4",
-            "cache_file": "assets/cache_bài_tập_test_v4.json",
+            "name": "Động tác bụng",
+            "standard_video": "../../assets/Động tác Bụng.mp4",
+            "cache_file": "assets/cache_động_tác_bụng.json",
             "frame_mapping": {
                 "Nhịp 1": [
                     0,
-                    99
+                    32
                 ],
                 "Nhịp 2": [
-                    99,
-                    132
+                    32,
+                    145
                 ],
                 "Nhịp 3": [
-                    132,
-                    211
+                    145,
+                    191
                 ],
                 "Nhịp 4": [
-                    211,
-                    230
+                    191,
+                    352
                 ],
                 "Nhịp 5": [
-                    230,
-                    283
+                    352,
+                    454
                 ],
                 "Nhịp 6": [
-                    283,
-                    345
+                    454,
+                    504
                 ],
                 "Nhịp 7": [
-                    345,
-                    441
+                    504,
+                    607
                 ],
                 "Nhịp 8": [
-                    441,
-                    467
+                    607,
+                    652
                 ]
             },
             "phase_weights": {
                 "Nhịp 1": {
-                    "L_SHOULDER_ANGLE": 0.15,
-                    "R_SHOULDER_ANGLE": 0.15,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.08,
-                    "R_KNEE_ANGLE": 0.08,
-                    "WRIST_DISTANCE": 0.04,
+                    "L_SHOULDER_ANGLE": 0.42,
+                    "R_SHOULDER_ANGLE": 0.5,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.06,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 2": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
+                    "L_SHOULDER_ANGLE": 0.47,
+                    "R_SHOULDER_ANGLE": 0.42,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
                     "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.01,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 3": {
-                    "L_SHOULDER_ANGLE": 0.1,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.2,
-                    "R_ELBOW_ANGLE": 0.2,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.06,
-                    "R_KNEE_ANGLE": 0.06,
-                    "WRIST_DISTANCE": 0.08,
+                    "L_SHOULDER_ANGLE": 0.51,
+                    "R_SHOULDER_ANGLE": 0.42,
+                    "L_ELBOW_ANGLE": 0.0,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.04,
+                    "R_HIP_ANGLE": 0.02,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 4": {
+                    "L_SHOULDER_ANGLE": 0.48,
+                    "R_SHOULDER_ANGLE": 0.39,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.03,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.07,
+                    "L_KNEE_ANGLE": 0.01,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 5": {
+                    "L_SHOULDER_ANGLE": 0.42,
+                    "R_SHOULDER_ANGLE": 0.5,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.02,
+                    "L_HIP_ANGLE": 0.05,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 6": {
+                    "L_SHOULDER_ANGLE": 0.52,
+                    "R_SHOULDER_ANGLE": 0.42,
+                    "L_ELBOW_ANGLE": 0.0,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.03,
+                    "R_HIP_ANGLE": 0.02,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 7": {
+                    "L_SHOULDER_ANGLE": 0.55,
+                    "R_SHOULDER_ANGLE": 0.35,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.03,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.06,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 8": {
+                    "L_SHOULDER_ANGLE": 0.56,
+                    "R_SHOULDER_ANGLE": 0.4,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.02,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                }
+            }
+        },
+        {
+            "name": "Động tác bật nhảy",
+            "standard_video": "../../assets/Động tác Bật nhảy.mp4",
+            "cache_file": "assets/cache_động_tác_bật_nhảy.json",
+            "frame_mapping": {
+                "Nhịp 1": [
+                    0,
+                    37
+                ],
+                "Nhịp 2": [
+                    37,
+                    89
+                ],
+                "Nhịp 3": [
+                    89,
+                    127
+                ],
+                "Nhịp 4": [
+                    127,
+                    213
+                ],
+                "Nhịp 5": [
+                    213,
+                    229
+                ],
+                "Nhịp 6": [
+                    229,
+                    255
+                ],
+                "Nhịp 7": [
+                    255,
+                    271
+                ],
+                "Nhịp 8": [
+                    271,
+                    336
+                ]
+            },
+            "phase_weights": {
+                "Nhịp 1": {
+                    "L_SHOULDER_ANGLE": 0.43,
+                    "R_SHOULDER_ANGLE": 0.14,
+                    "L_ELBOW_ANGLE": 0.32,
+                    "R_ELBOW_ANGLE": 0.09,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.01,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 2": {
                     "L_SHOULDER_ANGLE": 0.05,
-                    "R_SHOULDER_ANGLE": 0.05,
-                    "L_ELBOW_ANGLE": 0.2,
-                    "R_ELBOW_ANGLE": 0.2,
-                    "L_HIP_ANGLE": 0.15,
-                    "R_HIP_ANGLE": 0.15,
-                    "L_KNEE_ANGLE": 0.08,
-                    "R_KNEE_ANGLE": 0.08,
-                    "WRIST_DISTANCE": 0.04,
+                    "R_SHOULDER_ANGLE": 0.04,
+                    "L_ELBOW_ANGLE": 0.55,
+                    "R_ELBOW_ANGLE": 0.33,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.02,
+                    "R_KNEE_ANGLE": 0.01,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 3": {
+                    "L_SHOULDER_ANGLE": 0.45,
+                    "R_SHOULDER_ANGLE": 0.42,
+                    "L_ELBOW_ANGLE": 0.07,
+                    "R_ELBOW_ANGLE": 0.06,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 4": {
+                    "L_SHOULDER_ANGLE": 0.51,
+                    "R_SHOULDER_ANGLE": 0.42,
+                    "L_ELBOW_ANGLE": 0.04,
+                    "R_ELBOW_ANGLE": 0.03,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 5": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
+                    "L_SHOULDER_ANGLE": 0.36,
+                    "R_SHOULDER_ANGLE": 0.17,
+                    "L_ELBOW_ANGLE": 0.05,
+                    "R_ELBOW_ANGLE": 0.3,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.07,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.04,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 6": {
-                    "L_SHOULDER_ANGLE": 0.19,
-                    "R_SHOULDER_ANGLE": 0.19,
-                    "L_ELBOW_ANGLE": 0.15,
-                    "R_ELBOW_ANGLE": 0.15,
-                    "L_HIP_ANGLE": 0.08,
-                    "R_HIP_ANGLE": 0.08,
-                    "L_KNEE_ANGLE": 0.05,
-                    "R_KNEE_ANGLE": 0.05,
-                    "WRIST_DISTANCE": 0.06,
+                    "L_SHOULDER_ANGLE": 0.46,
+                    "R_SHOULDER_ANGLE": 0.41,
+                    "L_ELBOW_ANGLE": 0.07,
+                    "R_ELBOW_ANGLE": 0.06,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 7": {
+                    "L_SHOULDER_ANGLE": 0.23,
+                    "R_SHOULDER_ANGLE": 0.13,
+                    "L_ELBOW_ANGLE": 0.18,
+                    "R_ELBOW_ANGLE": 0.05,
+                    "L_HIP_ANGLE": 0.05,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.24,
+                    "R_KNEE_ANGLE": 0.12,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 8": {
+                    "L_SHOULDER_ANGLE": 0.51,
+                    "R_SHOULDER_ANGLE": 0.45,
+                    "L_ELBOW_ANGLE": 0.02,
+                    "R_ELBOW_ANGLE": 0.02,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                }
+            }
+        },
+        {
+            "name": "Động tác chân",
+            "standard_video": "../../assets/Động tác Chân.mp4",
+            "cache_file": "assets/cache_động_tác_chân.json",
+            "frame_mapping": {
+                "Nhịp 1": [
+                    0,
+                    10
+                ],
+                "Nhịp 2": [
+                    10,
+                    126
+                ],
+                "Nhịp 3": [
+                    126,
+                    157
+                ],
+                "Nhịp 4": [
+                    157,
+                    270
+                ],
+                "Nhịp 5": [
+                    270,
+                    293
+                ],
+                "Nhịp 6": [
+                    293,
+                    436
+                ],
+                "Nhịp 7": [
+                    436,
+                    544
+                ],
+                "Nhịp 8": [
+                    544,
+                    567
+                ]
+            },
+            "phase_weights": {
+                "Nhịp 1": {
+                    "L_SHOULDER_ANGLE": 0.14,
+                    "R_SHOULDER_ANGLE": 0.23,
+                    "L_ELBOW_ANGLE": 0.21,
+                    "R_ELBOW_ANGLE": 0.36,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.04,
+                    "L_KNEE_ANGLE": 0.02,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 2": {
+                    "L_SHOULDER_ANGLE": 0.03,
+                    "R_SHOULDER_ANGLE": 0.04,
+                    "L_ELBOW_ANGLE": 0.92,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 3": {
+                    "L_SHOULDER_ANGLE": 0.38,
+                    "R_SHOULDER_ANGLE": 0.45,
+                    "L_ELBOW_ANGLE": 0.09,
+                    "R_ELBOW_ANGLE": 0.06,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.01,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.01,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 4": {
+                    "L_SHOULDER_ANGLE": 0.03,
+                    "R_SHOULDER_ANGLE": 0.02,
+                    "L_ELBOW_ANGLE": 0.57,
+                    "R_ELBOW_ANGLE": 0.38,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 5": {
+                    "L_SHOULDER_ANGLE": 0.34,
+                    "R_SHOULDER_ANGLE": 0.42,
+                    "L_ELBOW_ANGLE": 0.06,
+                    "R_ELBOW_ANGLE": 0.17,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.01,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 6": {
                     "L_SHOULDER_ANGLE": 0.1,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.2,
-                    "R_ELBOW_ANGLE": 0.2,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.06,
-                    "R_KNEE_ANGLE": 0.06,
-                    "WRIST_DISTANCE": 0.08,
+                    "R_SHOULDER_ANGLE": 0.11,
+                    "L_ELBOW_ANGLE": 0.77,
+                    "R_ELBOW_ANGLE": 0.02,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 7": {
+                    "L_SHOULDER_ANGLE": 0.02,
+                    "R_SHOULDER_ANGLE": 0.02,
+                    "L_ELBOW_ANGLE": 0.56,
+                    "R_ELBOW_ANGLE": 0.4,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 8": {
+                    "L_SHOULDER_ANGLE": 0.3,
+                    "R_SHOULDER_ANGLE": 0.32,
+                    "L_ELBOW_ANGLE": 0.17,
+                    "R_ELBOW_ANGLE": 0.16,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.01,
+                    "L_KNEE_ANGLE": 0.02,
+                    "R_KNEE_ANGLE": 0.01,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                }
+            }
+        },
+        {
+            "name": "Động tác lưng",
+            "standard_video": "../../assets/Động tác Lưng.mp4",
+            "cache_file": "assets/cache_động_tác_lưng.json",
+            "frame_mapping": {
+                "Nhịp 1": [
+                    0,
+                    75
+                ],
+                "Nhịp 2": [
+                    75,
+                    245
+                ],
+                "Nhịp 3": [
+                    245,
+                    369
+                ],
+                "Nhịp 4": [
+                    369,
+                    384
+                ],
+                "Nhịp 5": [
+                    384,
+                    401
+                ],
+                "Nhịp 6": [
+                    401,
+                    543
+                ],
+                "Nhịp 7": [
+                    543,
+                    561
+                ],
+                "Nhịp 8": [
+                    561,
+                    642
+                ]
+            },
+            "phase_weights": {
+                "Nhịp 1": {
+                    "L_SHOULDER_ANGLE": 0.51,
+                    "R_SHOULDER_ANGLE": 0.45,
+                    "L_ELBOW_ANGLE": 0.03,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 2": {
+                    "L_SHOULDER_ANGLE": 0.52,
+                    "R_SHOULDER_ANGLE": 0.45,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.02,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 3": {
+                    "L_SHOULDER_ANGLE": 0.52,
+                    "R_SHOULDER_ANGLE": 0.46,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 4": {
+                    "L_SHOULDER_ANGLE": 0.58,
+                    "R_SHOULDER_ANGLE": 0.38,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.02,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 5": {
+                    "L_SHOULDER_ANGLE": 0.4,
+                    "R_SHOULDER_ANGLE": 0.49,
+                    "L_ELBOW_ANGLE": 0.02,
+                    "R_ELBOW_ANGLE": 0.07,
+                    "L_HIP_ANGLE": 0.01,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.01,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 6": {
+                    "L_SHOULDER_ANGLE": 0.52,
+                    "R_SHOULDER_ANGLE": 0.46,
+                    "L_ELBOW_ANGLE": 0.01,
+                    "R_ELBOW_ANGLE": 0.01,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 7": {
+                    "L_SHOULDER_ANGLE": 0.21,
+                    "R_SHOULDER_ANGLE": 0.28,
+                    "L_ELBOW_ANGLE": 0.18,
+                    "R_ELBOW_ANGLE": 0.33,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                },
+                "Nhịp 8": {
+                    "L_SHOULDER_ANGLE": 0.53,
+                    "R_SHOULDER_ANGLE": 0.47,
+                    "L_ELBOW_ANGLE": 0.0,
+                    "R_ELBOW_ANGLE": 0.0,
+                    "L_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.0,
+                    "L_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.0,
+                    "WRIST_DISTANCE": 0.0,
+                    "ANKLE_DISTANCE": 0.0
+                }
+            }
+        },
+        {
+            "name": "Động tác điều hoà",
+            "standard_video": "../../assets/Động tác Điều hòa.mp4",
+            "cache_file": "assets/cache_động_tác_điều_hoà.json",
+            "frame_mapping": {
+                "Nhịp 1": [
+                    0,
+                    59
+                ],
+                "Nhịp 2": [
+                    59,
+                    202
+                ],
+                "Nhịp 3": [
+                    202,
+                    237
+                ],
+                "Nhịp 4": [
+                    237,
+                    355
+                ],
+                "Nhịp 5": [
+                    355,
+                    386
+                ],
+                "Nhịp 6": [
+                    386,
+                    523
+                ],
+                "Nhịp 7": [
+                    523,
+                    550
+                ],
+                "Nhịp 8": [
+                    550,
+                    684
+                ]
+            },
+            "phase_weights": {
+                "Nhịp 1": {
                     "L_SHOULDER_ANGLE": 0.1,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.2,
-                    "R_ELBOW_ANGLE": 0.2,
-                    "L_HIP_ANGLE": 0.1,
-                    "R_HIP_ANGLE": 0.1,
-                    "L_KNEE_ANGLE": 0.06,
-                    "R_KNEE_ANGLE": 0.06,
-                    "WRIST_DISTANCE": 0.08,
-                    "ANKLE_DISTANCE": 0.0
-                }
-            }
-        },
-        {
-            "name": "bài tập test v5.1",
-            "standard_video": "assets/Bài thể dục lớp 5 với hoa.mp4",
-            "cache_file": "assets/cache_bài_tập_test_v5.1.json",
-            "frame_mapping": {
-                "Nhịp 1": [
-                    0,
-                    99
-                ],
-                "Nhịp 2": [
-                    99,
-                    132
-                ],
-                "Nhịp 3": [
-                    132,
-                    211
-                ],
-                "Nhịp 4": [
-                    211,
-                    230
-                ],
-                "Nhịp 5": [
-                    230,
-                    283
-                ],
-                "Nhịp 6": [
-                    283,
-                    345
-                ],
-                "Nhịp 7": [
-                    345,
-                    441
-                ],
-                "Nhịp 8": [
-                    441,
-                    467
-                ]
-            },
-            "phase_weights": {
-                "Nhịp 1": {
-                    "L_SHOULDER_ANGLE": 0.54,
-                    "R_SHOULDER_ANGLE": 0.43,
-                    "L_ELBOW_ANGLE": 0.01,
-                    "R_ELBOW_ANGLE": 0.01,
+                    "R_SHOULDER_ANGLE": 0.02,
+                    "L_ELBOW_ANGLE": 0.47,
+                    "R_ELBOW_ANGLE": 0.39,
                     "L_HIP_ANGLE": 0.01,
-                    "R_HIP_ANGLE": 0.0,
+                    "R_HIP_ANGLE": 0.01,
                     "L_KNEE_ANGLE": 0.0,
                     "R_KNEE_ANGLE": 0.0,
                     "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 2": {
-                    "L_SHOULDER_ANGLE": 0.29,
-                    "R_SHOULDER_ANGLE": 0.16,
-                    "L_ELBOW_ANGLE": 0.43,
-                    "R_ELBOW_ANGLE": 0.11,
+                    "L_SHOULDER_ANGLE": 0.49,
+                    "R_SHOULDER_ANGLE": 0.45,
+                    "L_ELBOW_ANGLE": 0.03,
+                    "R_ELBOW_ANGLE": 0.02,
                     "L_HIP_ANGLE": 0.01,
                     "R_HIP_ANGLE": 0.0,
                     "L_KNEE_ANGLE": 0.0,
@@ -485,10 +1033,10 @@
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 3": {
-                    "L_SHOULDER_ANGLE": 0.09,
+                    "L_SHOULDER_ANGLE": 0.06,
                     "R_SHOULDER_ANGLE": 0.03,
-                    "L_ELBOW_ANGLE": 0.44,
-                    "R_ELBOW_ANGLE": 0.44,
+                    "L_ELBOW_ANGLE": 0.34,
+                    "R_ELBOW_ANGLE": 0.57,
                     "L_HIP_ANGLE": 0.0,
                     "R_HIP_ANGLE": 0.0,
                     "L_KNEE_ANGLE": 0.0,
@@ -497,10 +1045,10 @@
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 4": {
-                    "L_SHOULDER_ANGLE": 0.03,
-                    "R_SHOULDER_ANGLE": 0.01,
-                    "L_ELBOW_ANGLE": 0.11,
-                    "R_ELBOW_ANGLE": 0.85,
+                    "L_SHOULDER_ANGLE": 0.5,
+                    "R_SHOULDER_ANGLE": 0.46,
+                    "L_ELBOW_ANGLE": 0.03,
+                    "R_ELBOW_ANGLE": 0.01,
                     "L_HIP_ANGLE": 0.0,
                     "R_HIP_ANGLE": 0.0,
                     "L_KNEE_ANGLE": 0.0,
@@ -509,98 +1057,21 @@
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 5": {
-                    "L_SHOULDER_ANGLE": 0.43,
-                    "R_SHOULDER_ANGLE": 0.35,
-                    "L_ELBOW_ANGLE": 0.18,
-                    "R_ELBOW_ANGLE": 0.02,
-                    "L_HIP_ANGLE": 0.02,
+                    "L_SHOULDER_ANGLE": 0.05,
+                    "R_SHOULDER_ANGLE": 0.02,
+                    "L_ELBOW_ANGLE": 0.4,
+                    "R_ELBOW_ANGLE": 0.51,
+                    "L_HIP_ANGLE": 0.01,
                     "R_HIP_ANGLE": 0.0,
                     "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
+                    "R_KNEE_ANGLE": 0.01,
                     "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 6": {
-                    "L_SHOULDER_ANGLE": 0.11,
-                    "R_SHOULDER_ANGLE": 0.47,
-                    "L_ELBOW_ANGLE": 0.05,
-                    "R_ELBOW_ANGLE": 0.35,
-                    "L_HIP_ANGLE": 0.01,
-                    "R_HIP_ANGLE": 0.01,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 7": {
-                    "L_SHOULDER_ANGLE": 0.08,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.46,
-                    "R_ELBOW_ANGLE": 0.36,
-                    "L_HIP_ANGLE": 0.0,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 8": {
-                    "L_SHOULDER_ANGLE": 0.09,
-                    "R_SHOULDER_ANGLE": 0.05,
-                    "L_ELBOW_ANGLE": 0.14,
-                    "R_ELBOW_ANGLE": 0.69,
-                    "L_HIP_ANGLE": 0.03,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                }
-            }
-        },
-        {
-            "name": "bài tập test v6",
-            "standard_video": "assets/Bài thể dục lớp 5 với hoa.mp4",
-            "cache_file": "assets/cache_bài_tập_test_v6.json",
-            "frame_mapping": {
-                "Nhịp 1": [
-                    0,
-                    99
-                ],
-                "Nhịp 2": [
-                    99,
-                    132
-                ],
-                "Nhịp 3": [
-                    132,
-                    211
-                ],
-                "Nhịp 4": [
-                    211,
-                    230
-                ],
-                "Nhịp 5": [
-                    230,
-                    283
-                ],
-                "Nhịp 6": [
-                    283,
-                    345
-                ],
-                "Nhịp 7": [
-                    345,
-                    441
-                ],
-                "Nhịp 8": [
-                    441,
-                    467
-                ]
-            },
-            "phase_weights": {
-                "Nhịp 1": {
-                    "L_SHOULDER_ANGLE": 0.54,
-                    "R_SHOULDER_ANGLE": 0.43,
-                    "L_ELBOW_ANGLE": 0.01,
+                    "L_SHOULDER_ANGLE": 0.49,
+                    "R_SHOULDER_ANGLE": 0.46,
+                    "L_ELBOW_ANGLE": 0.03,
                     "R_ELBOW_ANGLE": 0.01,
                     "L_HIP_ANGLE": 0.01,
                     "R_HIP_ANGLE": 0.0,
@@ -609,71 +1080,11 @@
                     "WRIST_DISTANCE": 0.0,
                     "ANKLE_DISTANCE": 0.0
                 },
-                "Nhịp 2": {
-                    "L_SHOULDER_ANGLE": 0.29,
-                    "R_SHOULDER_ANGLE": 0.16,
-                    "L_ELBOW_ANGLE": 0.43,
-                    "R_ELBOW_ANGLE": 0.11,
-                    "L_HIP_ANGLE": 0.01,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 3": {
-                    "L_SHOULDER_ANGLE": 0.09,
-                    "R_SHOULDER_ANGLE": 0.03,
-                    "L_ELBOW_ANGLE": 0.44,
-                    "R_ELBOW_ANGLE": 0.44,
-                    "L_HIP_ANGLE": 0.0,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 4": {
-                    "L_SHOULDER_ANGLE": 0.03,
-                    "R_SHOULDER_ANGLE": 0.01,
-                    "L_ELBOW_ANGLE": 0.11,
-                    "R_ELBOW_ANGLE": 0.85,
-                    "L_HIP_ANGLE": 0.0,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 5": {
-                    "L_SHOULDER_ANGLE": 0.43,
-                    "R_SHOULDER_ANGLE": 0.35,
-                    "L_ELBOW_ANGLE": 0.18,
-                    "R_ELBOW_ANGLE": 0.02,
-                    "L_HIP_ANGLE": 0.02,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 6": {
-                    "L_SHOULDER_ANGLE": 0.11,
-                    "R_SHOULDER_ANGLE": 0.47,
-                    "L_ELBOW_ANGLE": 0.05,
-                    "R_ELBOW_ANGLE": 0.35,
-                    "L_HIP_ANGLE": 0.01,
-                    "R_HIP_ANGLE": 0.01,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
                 "Nhịp 7": {
-                    "L_SHOULDER_ANGLE": 0.08,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.46,
-                    "R_ELBOW_ANGLE": 0.36,
+                    "L_SHOULDER_ANGLE": 0.02,
+                    "R_SHOULDER_ANGLE": 0.02,
+                    "L_ELBOW_ANGLE": 0.36,
+                    "R_ELBOW_ANGLE": 0.6,
                     "L_HIP_ANGLE": 0.0,
                     "R_HIP_ANGLE": 0.0,
                     "L_KNEE_ANGLE": 0.0,
@@ -682,148 +1093,11 @@
                     "ANKLE_DISTANCE": 0.0
                 },
                 "Nhịp 8": {
-                    "L_SHOULDER_ANGLE": 0.09,
-                    "R_SHOULDER_ANGLE": 0.05,
-                    "L_ELBOW_ANGLE": 0.14,
-                    "R_ELBOW_ANGLE": 0.69,
-                    "L_HIP_ANGLE": 0.03,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                }
-            }
-        },
-        {
-            "name": "bài tập test v7",
-            "standard_video": "../../assets/Bài thể dục lớp 5 với hoa.mp4",
-            "cache_file": "assets/cache_bài_tập_test_v7.json",
-            "frame_mapping": {
-                "Nhịp 1": [
-                    0,
-                    99
-                ],
-                "Nhịp 2": [
-                    99,
-                    132
-                ],
-                "Nhịp 3": [
-                    132,
-                    211
-                ],
-                "Nhịp 4": [
-                    211,
-                    230
-                ],
-                "Nhịp 5": [
-                    230,
-                    283
-                ],
-                "Nhịp 6": [
-                    283,
-                    345
-                ],
-                "Nhịp 7": [
-                    345,
-                    441
-                ],
-                "Nhịp 8": [
-                    441,
-                    467
-                ]
-            },
-            "phase_weights": {
-                "Nhịp 1": {
-                    "L_SHOULDER_ANGLE": 0.54,
-                    "R_SHOULDER_ANGLE": 0.43,
-                    "L_ELBOW_ANGLE": 0.01,
+                    "L_SHOULDER_ANGLE": 0.48,
+                    "R_SHOULDER_ANGLE": 0.48,
+                    "L_ELBOW_ANGLE": 0.03,
                     "R_ELBOW_ANGLE": 0.01,
-                    "L_HIP_ANGLE": 0.01,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 2": {
-                    "L_SHOULDER_ANGLE": 0.29,
-                    "R_SHOULDER_ANGLE": 0.16,
-                    "L_ELBOW_ANGLE": 0.43,
-                    "R_ELBOW_ANGLE": 0.11,
-                    "L_HIP_ANGLE": 0.01,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 3": {
-                    "L_SHOULDER_ANGLE": 0.09,
-                    "R_SHOULDER_ANGLE": 0.03,
-                    "L_ELBOW_ANGLE": 0.44,
-                    "R_ELBOW_ANGLE": 0.44,
                     "L_HIP_ANGLE": 0.0,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 4": {
-                    "L_SHOULDER_ANGLE": 0.03,
-                    "R_SHOULDER_ANGLE": 0.01,
-                    "L_ELBOW_ANGLE": 0.11,
-                    "R_ELBOW_ANGLE": 0.85,
-                    "L_HIP_ANGLE": 0.0,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 5": {
-                    "L_SHOULDER_ANGLE": 0.43,
-                    "R_SHOULDER_ANGLE": 0.35,
-                    "L_ELBOW_ANGLE": 0.18,
-                    "R_ELBOW_ANGLE": 0.02,
-                    "L_HIP_ANGLE": 0.02,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 6": {
-                    "L_SHOULDER_ANGLE": 0.11,
-                    "R_SHOULDER_ANGLE": 0.47,
-                    "L_ELBOW_ANGLE": 0.05,
-                    "R_ELBOW_ANGLE": 0.35,
-                    "L_HIP_ANGLE": 0.01,
-                    "R_HIP_ANGLE": 0.01,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 7": {
-                    "L_SHOULDER_ANGLE": 0.08,
-                    "R_SHOULDER_ANGLE": 0.1,
-                    "L_ELBOW_ANGLE": 0.46,
-                    "R_ELBOW_ANGLE": 0.36,
-                    "L_HIP_ANGLE": 0.0,
-                    "R_HIP_ANGLE": 0.0,
-                    "L_KNEE_ANGLE": 0.0,
-                    "R_KNEE_ANGLE": 0.0,
-                    "WRIST_DISTANCE": 0.0,
-                    "ANKLE_DISTANCE": 0.0
-                },
-                "Nhịp 8": {
-                    "L_SHOULDER_ANGLE": 0.09,
-                    "R_SHOULDER_ANGLE": 0.05,
-                    "L_ELBOW_ANGLE": 0.14,
-                    "R_ELBOW_ANGLE": 0.69,
-                    "L_HIP_ANGLE": 0.03,
                     "R_HIP_ANGLE": 0.0,
                     "L_KNEE_ANGLE": 0.0,
                     "R_KNEE_ANGLE": 0.0,
